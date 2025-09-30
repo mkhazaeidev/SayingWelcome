@@ -3,8 +3,7 @@ Functional Programming - Intermediate Level
 Advanced Functional Approaches with Comprehensive Error Handling and Composition
 
 This module demonstrates intermediate functional programming concepts through
-sophisticated patterns and techniques, all implemented without classes or
-lambda functions. The solutions showcase pure functional programming with
+sophisticated patterns and techniques. The solutions showcase pure functional programming with
 advanced error handling, composition patterns, and immutable data flow.
 
 Key Concepts Demonstrated:
@@ -864,7 +863,7 @@ def main():
         '10': ("Feature Toggles", demonstrate_solution_10)
     }
 
-    print("🧮 Functional Programming - Intermediate Level")
+    print("Functional Programming - Intermediate Level")
 
     for key, (description, _) in solutions.items():
         print(f"{key}. {description}")
@@ -880,7 +879,8 @@ def main():
 
         if choice in solutions:
             try:
-                solutions[choice][1]()
+                procedure = solutions[choice][1]
+                procedure()
             except Exception as error:
                 print(f"Error: Demonstration error: {error}")
         else:
