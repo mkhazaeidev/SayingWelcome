@@ -24,7 +24,7 @@ def welcome_with_comprehensive_validation():
     - Alphabetic character validation
     - Name length limits
     """
-    print("=== Welcome with Comprehensive Validation ===")
+    print("Welcome with Comprehensive Validation")
 
     while True:
         name = input("Please enter your name: ").strip()
@@ -551,7 +551,6 @@ def main():
     }
 
     print("Procedural Programming - Intermediate Level")
-    print("=" * 55)
     print("Choose a solution to test (1-10):")
 
     for key, (description, procedure) in solutions.items():
@@ -563,11 +562,10 @@ def main():
         choice = input("\nEnter your choice: ").strip()
 
         if choice == '0':
-            print("Goodbye! 👋")
+            print("Goodbye!")
             break
         elif choice in solutions:
-            print(f"\n🧪 Testing: {solutions[choice][0]}")
-            print("-" * 40)
+            print(f"\nTesting: {solutions[choice][0]}")
             try:
                 procedure = solutions[choice][1]
                 procedure()
